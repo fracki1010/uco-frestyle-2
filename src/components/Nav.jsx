@@ -31,7 +31,7 @@ export function Nav({img}) {
         {
           links.map(e => (
             // eslint-disable-next-line react/jsx-key, react-hooks/rules-of-hooks
-            <Navbar.Link href={e.href} active={'.' + useLocation().pathname === e.href} className="rock-salt-regular text-lg text-center">
+            <Navbar.Link href={e.href} key={e.key} active={'.' + useLocation().pathname === e.href} className="rock-salt-regular text-lg text-center">
           {e.name}
         </Navbar.Link>
         // eslint-disable-next-line react/jsx-key

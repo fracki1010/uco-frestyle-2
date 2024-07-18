@@ -15,7 +15,7 @@ export function ModalEvent({ condition, title, price, listBenefits }) {
   // eslint-disable-next-line react/prop-types
   for (let i = 0; i < listBenefits.length; i++) {
     listContent.push(
-      <li className="flex space-x-3">
+      <li key={i} className="flex space-x-3">
         <svg
           className="h-5 w-5 shrink-0 text-orange-600 dark:text-orange-500"
           fill="currentColor"
