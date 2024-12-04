@@ -12,6 +12,11 @@ const links= [{
   name: 'Events',
   href: './events',
   key: 2
+},
+{
+  name: 'Services',
+  href: './services',
+  key: 3
 }
 ]
 
@@ -20,7 +25,7 @@ export function Nav({img}) {
   return (
     <Navbar fluid rounded className=" bg-black">
       <Navbar.Brand href="#">
-        <img src={img} className="mr-3 h-12 sm:h-20" alt="Flowbite React Logo" />
+        <img src={img} className="mr-3 h-12 sm:h-20" />
         <span className="self-center whitespace-nowrap text-2xl hidden md:block font-bold dark:text-white ultra-regular">UCO FREESTYLE</span>
       </Navbar.Brand>
       <div className="flex md:order-2 rock-salt-regular">
