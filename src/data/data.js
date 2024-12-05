@@ -13,7 +13,7 @@ export const data = {
     membershipAndPublic: {
       id: 1,
       title: "MEMBRECIA Y PUBLICO",
-      image: '/src/assets/event-card.jpg',
+      image: 'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg',
       location:'Plaza Tunuyan, Mendoza',
       description:
         "*Únete a Uco Freestyle y disfruta de beneficios exclusivos* con nuestra membresía para público, pensada para aquellos que aman los eventos en vivo, la música y las experiencias únicas. Al ser parte de *Uco Freestyle*, disfrutarás de descuentos especiales en entradas para eventos, promociones con nuestros patrocinadores y muchos más beneficios. ¡Conviértete en miembro y aprovecha todo lo que tenemos para ofrecerte!",
@@ -30,7 +30,7 @@ export const data = {
     audioProduction: {
       id: 2,
       title: "PRODUCCION DE AUDIO",
-      image:'/src/assets/event-card.jpg',
+      image:'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg',
       location:'Plaza Tunuyan, Mendoza',
       description: "",
       benefits: [
@@ -42,7 +42,7 @@ export const data = {
     videoProduction: {
       id:3,
       title: "PRODUCCION DE VIDEO",
-      image: '/src/assets/event-card-2.jpg',
+      image: 'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg',
       location:'Plaza Tunuyan, Mendoza',
       description: "",
       benefits: [
@@ -73,7 +73,7 @@ export const data = {
     serviceSocialEvent: {
       id:5,
       title: "SERVICIO PARA EVENTOS SOCIALES",
-      image: '/src/assets/event-card-3.jpg',
+      image: 'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-3.jpg',
       location:'Plaza Tunuyan, Mendoza',
       description:
         "En *Uco Freestyle*, ofrecemos soluciones técnicas integrales para asegurar que tu evento social sea único e inolvidable. Ya sea un casamiento, cumpleaños de 15, reuniones o cualquier otro evento privado, nuestro equipo garantiza que cada detalle sea perfecto y que tu experiencia sea de la más alta calidad.",
@@ -121,7 +121,7 @@ export const data = {
     membershipForSocialOrganizations: {
       id:7,
       title: "Membresía - Organizaciones y Eventos Sociales",
-      image:'/src/assets/event-card-3.jpg',
+      image:'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg',
       location:'Plaza Tunuyan, Mendoza',
       description:
         "Una excelente oportunidad para quienes gestionan eventos sociales y organizadores emergentes. Esta membresía permite gestionar todos los aspectos técnicos de los eventos, desde sonido, luces, hasta grabación de video y difusión, con el apoyo de nuestro equipo profesional. Con precios accesibles y beneficios exclusivos, tendrás todo lo que necesitas para llevar tu evento al siguiente nivel.",
@@ -131,7 +131,7 @@ export const data = {
     sponsorship: {
       id:8,
       title: "SPONSOR",
-      image:'/src/assets/event-card-3.jpg',
+      image:'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg',
       location:'Plaza Tunuyan, Mendoza',
       description:
         "En *Uco Freestyle*, te ofrecemos una oportunidad única para que tu marca sea parte de nuestros eventos en vivo y alcance una audiencia comprometida. Al convertirte en patrocinador de nuestra productora, podrás disfrutar de una serie de beneficios exclusivos para impulsar tu visibilidad y promover tus productos o servicios de manera efectiva.",
