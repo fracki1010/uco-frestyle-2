@@ -1,7 +1,5 @@
 import { CarouselBody } from "../components/CarouselBody";
 import ReactPlayer from "react-player/youtube";
-//import { CardMember } from "../components/Card";}
-import {CardEvent2} from '../components/CardEvent2'
 import {BoldText} from '../components/BoldText'
 import {ExpandableDiv} from '../components/ExpandableDiv'
 import { data } from "../data/data";

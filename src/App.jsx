@@ -5,6 +5,7 @@ import { FooterUco } from "./components/Footer";
 import { Home } from "./screens/Home";
 import { Events } from "./screens/Events";
 import {Services} from './screens/Services'
+import { Videos } from "./screens/Videos";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/home" element={<Home/>}/>
           <Route path="/events" element={<Events/>}/>
           <Route path="/services" element={<Services/>}/>
+          <Route path="/videos" element={<Videos/>}/>
         </Routes>
       </Router>
       <footer className=" m-6 rounded-2xl">

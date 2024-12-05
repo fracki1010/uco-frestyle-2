@@ -7,8 +7,6 @@ import { CardEvent2 } from "../components/CardEvent2";
 export const Services = () => {
   const dataServices = data.services;
 
-  console.log(dataServices);
-
   return (
     <div>
 
