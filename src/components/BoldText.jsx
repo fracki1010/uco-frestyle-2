@@ -14,7 +14,7 @@ export const BoldText = ({ text }) => {
     <p>
       {parts.map((part, index) =>
         // Si el índice es impar, significa que está entre asteriscos
-        index % 2 === 1 ? <span key={index} className=" font-bold ultra-regular text-sm text-orange-600">{part}</span> : part
+        index % 2 === 1 ? <span key={index} className=" font-bold ultra-regular text-lg text-orange-600">{part}</span> : part
       )}
     </p>
   );

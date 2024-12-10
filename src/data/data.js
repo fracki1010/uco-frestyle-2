@@ -9,9 +9,10 @@ export const data = {
       'Los artistas vinculados a *Uco Freestyle* no solo reciben formación, sino que también participan activamente en la *producción de videoclips*. En estos tres años, *Uco Freestyle* se ha consolidado como un referente en la producción y gestión de eventos y ha *fortalecido su presencia* en la región, brindando una plataforma profesional para el crecimiento de los artistas y creando experiencias memorables para el público. La productora se dedica a fusionar música, danza y arte en su máxima expresión, asegurando siempre calidad y creatividad en cada proyecto. Además, *Uco Freestyle* mantiene una estrecha *alianza con LA COMUNA BAR CULTURAL*, un espacio que complementa sus actividades y sirve como punto de encuentro para artistas, público y la comunidad. Ahora dice *"LA COMUNA BAR CULTURAL"* como pediste, en mayúsculas y en negrita. ¡Espero que esté todo perfecto ahora!',
   },
 
-  services: {
-    membershipAndPublic: {
-      id: 1,
+  services: [
+    {
+    id: 1,
+
       title: "MEMBRECIA Y PUBLICO",
       image: 'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg',
       location:'Plaza Tunuyan, Mendoza',
@@ -25,9 +26,8 @@ export const data = {
         "5. *Acceso a información exclusiva*: Los miembros recibirán actualizaciones a través de nuestros canales de difusión sobre nuevas fechas de eventos, lanzamientos musicales, nuevos patrocinadores, promociones especiales y mucho más.",
         "6. *Participación en actividades de videoclips: Los miembros podrán ser parte de la grabación de **videoclips* de artistas, viviendo la experiencia de producción audiovisual de cerca.",
       ],
-    },
-
-    audioProduction: {
+  },
+    {
       id: 2,
       title: "PRODUCCION DE AUDIO",
       image:'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg',
@@ -39,7 +39,7 @@ export const data = {
       ],
     },
 
-    videoProduction: {
+    {
       id:3,
       title: "PRODUCCION DE VIDEO",
       image: 'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg',
@@ -54,7 +54,7 @@ export const data = {
       ],
     },
 
-    comboPack: {
+    {
       id:4,
       title: "PAQUETE COMBINADO",
       image: '/src/assets/event-card-3.jpg',
@@ -70,7 +70,7 @@ export const data = {
       ],
     },
 
-    serviceSocialEvent: {
+    {
       id:5,
       title: "SERVICIO PARA EVENTOS SOCIALES",
       image: 'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-3.jpg',
@@ -92,7 +92,7 @@ export const data = {
       ],
     },
 
-    culturalEventServices: {
+    {
       id:6,
       title: "Servicios para Gestores y Organizadores de Eventos Culturales",
       image:'/src/assets/event-card-3.jpg',
@@ -118,7 +118,7 @@ export const data = {
       ],
     },
 
-    membershipForSocialOrganizations: {
+    {
       id:7,
       title: "Membresía - Organizaciones y Eventos Sociales",
       image:'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg',
@@ -128,7 +128,7 @@ export const data = {
       benefits: [],
     },
 
-    sponsorship: {
+    {
       id:8,
       title: "SPONSOR",
       image:'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg',
@@ -147,5 +147,5 @@ export const data = {
         "5. *Creación de contenido*  Desarrollamos contenido exclusivo para tus redes sociales o campañas de marketing, destacando tu marca en nuestros eventos y actividades. Además, el área de marketing visitará tus propios locales para generar contenido personalizado y promover aún más tu marca.",
       ],
     },
-  },
+  ],
 };

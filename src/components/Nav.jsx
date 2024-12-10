@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 const links = [
   {
     name: "Home",
-    href: "./home",
+    href: "/home",
     key: 1,
   },
   {
