@@ -1,25 +1,42 @@
 import ReactPlayer from "react-player/youtube";
+import { data } from "../data/data.js";
 
 export const Videos = () => {
+  const dataService = data.videos;
+
   return (
-    <section className=" mx-3 md:mx-40 mb-20">
+    <section className=" mx-3 md:mx-40 mb-20 w-fit">
       <div className="grid gap-4">
-        <div className=" rounded-lg bg-gray-950 flex justify-center">
+        <div className=" rounded-lg bg-gray-950 flex justify-center max-w-full min-w-56">
           {/* <img
             className="h-auto max-w-full rounded-lg"
             src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
             alt=""
           /> */}
           <ReactPlayer
-          className=" h-auto max-w-full rounded-lg"
-          url={"https://www.youtube.com/watch?v=9RdrIkmfMh0"}
-          playing={false}
-          loop
-          height={400}
-          width={900}
-        />
+            className=" h-auto max-w-full rounded-lg"
+            url={"https://www.youtube.com/watch?v=9RdrIkmfMh0"}
+            playing={false}
+            loop
+            height={400}
+            width={900}
+          />
         </div>
-        <div className="grid grid-cols-5 gap-4">
+        <div className="grid sm:grid-cols-5 sm:h-52 grid-cols-2 gap-4">
+          {dataService.map((e, index) => {
+            return(
+            <div key={index}>
+              <ReactPlayer
+                className=" h-auto max-w-full rounded-lg"
+                url={e}
+                playing={false}
+                height={400}
+                width={900}
+                onPlay={() => window.location.href = e}
+                playIcon={false}
+              />
+            </div>);
+          },)}
           <div>
             <img
               className="h-auto max-w-full rounded-lg"

@@ -8,18 +8,19 @@ export const data = {
     quienesSomos3:
       'Los artistas vinculados a *Uco Freestyle* no solo reciben formación, sino que también participan activamente en la *producción de videoclips*. En estos tres años, *Uco Freestyle* se ha consolidado como un referente en la producción y gestión de eventos y ha *fortalecido su presencia* en la región, brindando una plataforma profesional para el crecimiento de los artistas y creando experiencias memorables para el público. La productora se dedica a fusionar música, danza y arte en su máxima expresión, asegurando siempre calidad y creatividad en cada proyecto. Además, *Uco Freestyle* mantiene una estrecha *alianza con LA COMUNA BAR CULTURAL*, un espacio que complementa sus actividades y sirve como punto de encuentro para artistas, público y la comunidad. Ahora dice *"LA COMUNA BAR CULTURAL"* como pediste, en mayúsculas y en negrita. ¡Espero que esté todo perfecto ahora!',
   },
-  menssageWpp:{
-    phone: '2622572774',
-    text: 'Hola me interesa la propuesta de la membresia '
+  menssageWpp: {
+    phone: "2622572774",
+    text: "Hola me interesa la propuesta de la membresia ",
   },
 
   services: [
     {
-    id: 1,
+      id: 1,
 
       title: "MEMBRECIA Y PUBLICO",
-      image: 'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg',
-      location:'Plaza Tunuyan, Mendoza',
+      image:
+        "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg",
+      location: "Plaza Tunuyan, Mendoza",
       description:
         "*Únete a Uco Freestyle y disfruta de beneficios exclusivos* con nuestra membresía para público, pensada para aquellos que aman los eventos en vivo, la música y las experiencias únicas. Al ser parte de *Uco Freestyle*, disfrutarás de descuentos especiales en entradas para eventos, promociones con nuestros patrocinadores y muchos más beneficios. ¡Conviértete en miembro y aprovecha todo lo que tenemos para ofrecerte!",
       benefits: [
@@ -30,12 +31,13 @@ export const data = {
         "5. *Acceso a información exclusiva*: Los miembros recibirán actualizaciones a través de nuestros canales de difusión sobre nuevas fechas de eventos, lanzamientos musicales, nuevos patrocinadores, promociones especiales y mucho más.",
         "6. *Participación en actividades de videoclips: Los miembros podrán ser parte de la grabación de **videoclips* de artistas, viviendo la experiencia de producción audiovisual de cerca.",
       ],
-  },
+    },
     {
       id: 2,
       title: "PRODUCCION DE AUDIO",
-      image:'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg',
-      location:'Plaza Tunuyan, Mendoza',
+      image:
+        "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg",
+      location: "Plaza Tunuyan, Mendoza",
       description: "",
       benefits: [
         " 1. *Grabación, Mezcla y Masterización*  Servicios completos de *grabación, mezcla y masterización de audio* para proyectos musicales, bandas y solistas. *Contamos con los equipos necesarios* para garantizar la mejor calidad en cada grabación, asegurándonos de capturar la esencia de tu música con precisión y profesionalismo.",
@@ -44,10 +46,11 @@ export const data = {
     },
 
     {
-      id:3,
+      id: 3,
       title: "PRODUCCION DE VIDEO",
-      image: 'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg',
-      location:'Plaza Tunuyan, Mendoza',
+      image:
+        "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg",
+      location: "Plaza Tunuyan, Mendoza",
       description: "",
       benefits: [
         "1. *Filmación Profesional para Proyectos Audiovisuales*  *Filmación profesional* de proyectos musicales, eventos o cualquier tipo de producción audiovisual. Capturamos la esencia de tu proyecto con una visión artística, asegurándonos de que cada toma sea perfecta para tu propósito y objetivo.",
@@ -59,10 +62,10 @@ export const data = {
     },
 
     {
-      id:4,
+      id: 4,
       title: "PAQUETE COMBINADO",
-      image: '/src/assets/event-card-3.jpg',
-      location:'Plaza Tunuyan, Mendoza',
+      image: "/src/assets/event-card-3.jpg",
+      location: "Plaza Tunuyan, Mendoza",
       description:
         "Ofrecemos un *paquete combinado* que incluye tanto nuestros servicios de *producción de audio* como de *producción de video*, brindando una solución integral para proyectos musicales, videoclips y eventos. Este paquete es ideal para artistas y bandas que buscan una producción completa, desde la grabación de la música hasta la creación del videoclip, pasando por la edición y el marketing visual. ",
       benefits: [
@@ -75,10 +78,11 @@ export const data = {
     },
 
     {
-      id:5,
+      id: 5,
       title: "SERVICIO PARA EVENTOS SOCIALES",
-      image: 'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-3.jpg',
-      location:'Plaza Tunuyan, Mendoza',
+      image:
+        "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-3.jpg",
+      location: "Plaza Tunuyan, Mendoza",
       description:
         "En *Uco Freestyle*, ofrecemos soluciones técnicas integrales para asegurar que tu evento social sea único e inolvidable. Ya sea un casamiento, cumpleaños de 15, reuniones o cualquier otro evento privado, nuestro equipo garantiza que cada detalle sea perfecto y que tu experiencia sea de la más alta calidad.",
       benefits: [
@@ -97,10 +101,10 @@ export const data = {
     },
 
     {
-      id:6,
+      id: 6,
       title: "Servicios para Gestores y Organizadores de Eventos Culturales",
-      image:'/src/assets/event-card-3.jpg',
-      location:'Plaza Tunuyan, Mendoza',
+      image: "/src/assets/event-card-3.jpg",
+      location: "Plaza Tunuyan, Mendoza",
       description:
         "Para los organizadores de eventos culturales, *Uco Freestyle* ofrece un conjunto completo de servicios técnicos, creativos y de difusión que aseguran el éxito de tu evento, ya sea un festival, un concierto o cualquier otro tipo de actividad cultural.",
       benefits: [
@@ -123,20 +127,22 @@ export const data = {
     },
 
     {
-      id:7,
+      id: 7,
       title: "Membresía - Organizaciones y Eventos Sociales",
-      image:'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg',
-      location:'Plaza Tunuyan, Mendoza',
+      image:
+        "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg",
+      location: "Plaza Tunuyan, Mendoza",
       description:
         "Una excelente oportunidad para quienes gestionan eventos sociales y organizadores emergentes. Esta membresía permite gestionar todos los aspectos técnicos de los eventos, desde sonido, luces, hasta grabación de video y difusión, con el apoyo de nuestro equipo profesional. Con precios accesibles y beneficios exclusivos, tendrás todo lo que necesitas para llevar tu evento al siguiente nivel.",
       benefits: [],
     },
 
     {
-      id:8,
+      id: 8,
       title: "SPONSOR",
-      image:'https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg',
-      location:'Plaza Tunuyan, Mendoza',
+      image:
+        "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg",
+      location: "Plaza Tunuyan, Mendoza",
       description:
         "En *Uco Freestyle*, te ofrecemos una oportunidad única para que tu marca sea parte de nuestros eventos en vivo y alcance una audiencia comprometida. Al convertirte en patrocinador de nuestra productora, podrás disfrutar de una serie de beneficios exclusivos para impulsar tu visibilidad y promover tus productos o servicios de manera efectiva.",
       benefits: [
@@ -151,5 +157,23 @@ export const data = {
         "5. *Creación de contenido*  Desarrollamos contenido exclusivo para tus redes sociales o campañas de marketing, destacando tu marca en nuestros eventos y actividades. Además, el área de marketing visitará tus propios locales para generar contenido personalizado y promover aún más tu marca.",
       ],
     },
+  ],
+  videos: [
+    "https://youtu.be/ESVg3sfNzoE?si=OThKtyspyt6ggwjc",
+    "https://youtu.be/iJojagWVwD4?si=u0SkRO00uFY9IVX7",
+    "https://youtu.be/Sb7QTqaf33s?si=no5a_fyJdMstJ0_w",
+    "https://youtu.be/Oqmg3TnYORA?si=JQ8lGS4ThoJ26kAN",
+    "https://youtu.be/ZU431mcrRok?si=7ScdnJhnunZbxIV3",
+    "https://youtu.be/4bUD6nzQ5k4?si=GNxzi6mzgq5EPEgv",
+    "https://youtu.be/Umbhr3QhLco?si=l3NUXYFwsUQyYuiO",
+    "https://youtu.be/N4Vk__rDqiA?si=2THdzW7JH6HNOzPE",
+    "https://youtu.be/A_pVihMaSM8?si=N5EwSAKo0cv6tuIt",
+    "https://youtu.be/BxBpslvZGlo?si=nkZpFjqjucQH1YA4",
+    "https://youtu.be/1UMWCVM2uBE?si=HlBGek5kV1nxQss-",
+    "https://youtu.be/QtzG0mR5mP0?si=KFLmKbexUKVJHt8W",
+    "https://youtu.be/PaCBGqi3oL4?si=FJYXatmocf_BwWxh",
+    "https://youtu.be/LTNsZyYkFcs?si=mtpLbSSsILJG2qD1",
+    "https://youtu.be/pGBKxKxgiOY?si=8THW2JOrLDkrHeAz",
+    "https://youtu.be/9RdrIkmfMh0?si=uvA78xaVctPSf0_C",
   ],
 };
