@@ -32,37 +32,10 @@ export const data = {
         "6. *Participación en actividades de videoclips: Los miembros podrán ser parte de la grabación de **videoclips* de artistas, viviendo la experiencia de producción audiovisual de cerca.",
       ],
     },
+    
+
     {
       id: 2,
-      title: "PRODUCCION DE AUDIO",
-      image:
-        "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg",
-      location: "Plaza Tunuyan, Mendoza",
-      description: "",
-      benefits: [
-        " 1. *Grabación, Mezcla y Masterización*  Servicios completos de *grabación, mezcla y masterización de audio* para proyectos musicales, bandas y solistas. *Contamos con los equipos necesarios* para garantizar la mejor calidad en cada grabación, asegurándonos de capturar la esencia de tu música con precisión y profesionalismo.",
-        "2. *Revisión de Letra, Preparación y Acompañamiento*  Además de los servicios técnicos, brindamos un *valor agregado* que incluye la *revisión de letras, **preparación para la grabación* y *acompañamiento durante todo el proceso creativo*. Nos aseguramos de que cada proyecto esté listo para alcanzar su máximo potencial.",
-      ],
-    },
-
-    {
-      id: 3,
-      title: "PRODUCCION DE VIDEO",
-      image:
-        "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg",
-      location: "Plaza Tunuyan, Mendoza",
-      description: "",
-      benefits: [
-        "1. *Filmación Profesional para Proyectos Audiovisuales*  *Filmación profesional* de proyectos musicales, eventos o cualquier tipo de producción audiovisual. Capturamos la esencia de tu proyecto con una visión artística, asegurándonos de que cada toma sea perfecta para tu propósito y objetivo.",
-
-        "2. *Edición y Creación de Contenido Visual*   *Edición de video* y *creación de contenido visual* para promocionar tu música, eventos o proyectos. Desde la *edición de videoclips* hasta contenido para redes sociales, adaptamos cada pieza a tu público objetivo, con una mezcla perfecta de creatividad y profesionalismo.",
-
-        "3. *Desarrollo de Guion, Preparación y Acompañamiento Creativo*  Además de los servicios de grabación y edición, ofrecemos un *acompañamiento completo* que incluye la *creación del guion, **preparación para la grabación* y *acompañamiento durante todo el proceso creativo*. Nos aseguramos de que tu visión se materialice, apoyándote en cada paso del camino.",
-      ],
-    },
-
-    {
-      id: 4,
       title: "PAQUETE COMBINADO",
       image: "/src/assets/event-card-3.jpg",
       location: "Plaza Tunuyan, Mendoza",
@@ -75,10 +48,40 @@ export const data = {
         "*Desarrollo de guion y acompañamiento creativo* para asegurar la mejor ejecución de tu proyecto.",
         "Con nuestro *paquete combinado*, tendrás la posibilidad de coordinar todos los aspectos técnicos de audio y video en un solo lugar, lo que te ahorrará tiempo y esfuerzo. ¡Déjanos llevar tu proyecto de principio a fin con calidad profesional y atención personalizada!",
       ],
+      package: [
+        {
+          id: 7,
+          title: "PRODUCCION DE AUDIO",
+          image:
+            "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg",
+          location: "Plaza Tunuyan, Mendoza",
+          description: "",
+          benefits: [
+            " 1. *Grabación, Mezcla y Masterización*  Servicios completos de *grabación, mezcla y masterización de audio* para proyectos musicales, bandas y solistas. *Contamos con los equipos necesarios* para garantizar la mejor calidad en cada grabación, asegurándonos de capturar la esencia de tu música con precisión y profesionalismo.",
+            "2. *Revisión de Letra, Preparación y Acompañamiento*  Además de los servicios técnicos, brindamos un *valor agregado* que incluye la *revisión de letras, **preparación para la grabación* y *acompañamiento durante todo el proceso creativo*. Nos aseguramos de que cada proyecto esté listo para alcanzar su máximo potencial.",
+          ],
+        },
+    
+        {
+          id: 8,
+          title: "PRODUCCION DE VIDEO",
+          image:
+            "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg",
+          location: "Plaza Tunuyan, Mendoza",
+          description: "",
+          benefits: [
+            "1. *Filmación Profesional para Proyectos Audiovisuales*  *Filmación profesional* de proyectos musicales, eventos o cualquier tipo de producción audiovisual. Capturamos la esencia de tu proyecto con una visión artística, asegurándonos de que cada toma sea perfecta para tu propósito y objetivo.",
+    
+            "2. *Edición y Creación de Contenido Visual*   *Edición de video* y *creación de contenido visual* para promocionar tu música, eventos o proyectos. Desde la *edición de videoclips* hasta contenido para redes sociales, adaptamos cada pieza a tu público objetivo, con una mezcla perfecta de creatividad y profesionalismo.",
+    
+            "3. *Desarrollo de Guion, Preparación y Acompañamiento Creativo*  Además de los servicios de grabación y edición, ofrecemos un *acompañamiento completo* que incluye la *creación del guion, **preparación para la grabación* y *acompañamiento durante todo el proceso creativo*. Nos aseguramos de que tu visión se materialice, apoyándote en cada paso del camino.",
+          ],
+        },
+      ]
     },
 
     {
-      id: 5,
+      id: 3,
       title: "SERVICIO PARA EVENTOS SOCIALES",
       image:
         "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-3.jpg",
@@ -101,7 +104,7 @@ export const data = {
     },
 
     {
-      id: 6,
+      id: 4,
       title: "Servicios para Gestores y Organizadores de Eventos Culturales",
       image: "/src/assets/event-card-3.jpg",
       location: "Plaza Tunuyan, Mendoza",
@@ -127,7 +130,7 @@ export const data = {
     },
 
     {
-      id: 7,
+      id: 5,
       title: "Membresía - Organizaciones y Eventos Sociales",
       image:
         "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg",
@@ -138,7 +141,7 @@ export const data = {
     },
 
     {
-      id: 8,
+      id: 6,
       title: "SPONSOR",
       image:
         "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg",

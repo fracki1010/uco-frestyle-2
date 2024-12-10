@@ -1,8 +1,10 @@
+
 import { BoldText } from "../components/BoldText.jsx";
 import { data } from "../data/data.js";
 import { useParams } from "react-router-dom";
 
 import whatsapp from "../assets/whatsapp.png";
+import { CardEvent3 } from "../components/CardEvent3.jsx";
 
 // eslint-disable-next-line react/prop-types
 export const Service = () => {
@@ -12,6 +14,10 @@ export const Service = () => {
   const dataServicesId = Object.values(dataServices).find(
     (data) => data.id == id
   );
+
+  const dataPackage = dataServicesId.package ?? [];
+
+  console.log(dataPackage);
 
   return (
     <>
@@ -34,10 +40,32 @@ export const Service = () => {
             </div>
           ))}
         </div>
+        <div
+                
+                className=" m-5 p-5 flex flex-row flex-wrap justify-around "
+              >
+        { dataPackage.length != 0 
+        ?  dataPackage.map((e, index) => {
+            return (
+              
+                <div key={index} className=" m-2">
+                  
+                <CardEvent3 key={index} title={e.title} image={e.image} />
+                </div>
+              
+            );
+          })
+          : <></>
+        }
+        </div>
       </section>
       <section className=" m-10 flex justify-center ">
         <div>
-          <img src={whatsapp} alt="whatsapp" className=" max-w-52 w-36 md:w-52 md:m-14 animate-bounce" />
+          <img
+            src={whatsapp}
+            alt="whatsapp"
+            className=" max-w-52 w-36 md:w-52 md:m-14 animate-bounce"
+          />
         </div>
         <div className="flex flex-col self-center">
           <h3 className="text-2xl font-bold m-5">
