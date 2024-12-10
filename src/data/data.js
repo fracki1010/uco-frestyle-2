@@ -8,6 +8,10 @@ export const data = {
     quienesSomos3:
       'Los artistas vinculados a *Uco Freestyle* no solo reciben formación, sino que también participan activamente en la *producción de videoclips*. En estos tres años, *Uco Freestyle* se ha consolidado como un referente en la producción y gestión de eventos y ha *fortalecido su presencia* en la región, brindando una plataforma profesional para el crecimiento de los artistas y creando experiencias memorables para el público. La productora se dedica a fusionar música, danza y arte en su máxima expresión, asegurando siempre calidad y creatividad en cada proyecto. Además, *Uco Freestyle* mantiene una estrecha *alianza con LA COMUNA BAR CULTURAL*, un espacio que complementa sus actividades y sirve como punto de encuentro para artistas, público y la comunidad. Ahora dice *"LA COMUNA BAR CULTURAL"* como pediste, en mayúsculas y en negrita. ¡Espero que esté todo perfecto ahora!',
   },
+  menssageWpp:{
+    phone: '2622572774',
+    text: 'Hola me interesa la propuesta de la membresia '
+  },
 
   services: [
     {
