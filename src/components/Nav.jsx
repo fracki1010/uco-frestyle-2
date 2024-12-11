@@ -11,17 +11,17 @@ const links = [
   },
   {
     name: "Events",
-    href: "./events",
+    href: "/events",
     key: 2,
   },
   {
     name: "Services",
-    href: "./services",
+    href: "/services",
     key: 3,
   },
   {
     name: "Videos",
-    href: "./videos",
+    href: "/videos",
     key: 4,
   },
 ];

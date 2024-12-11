@@ -1,22 +1,26 @@
-
 import { BoldText } from "../components/BoldText.jsx";
 import { data } from "../data/data.js";
 import { useParams } from "react-router-dom";
 
 import whatsapp from "../assets/whatsapp.png";
-import { CardEvent3 } from "../components/CardEvent3.jsx";
 
 // eslint-disable-next-line react/prop-types
-export const Service = () => {
-  const id = useParams().serviceId;
-  const dataServices = data.services;
+export const Package = () => {
+  const idService = useParams().serviceId;
+  const idPackage = useParams().packageId;
 
+  //Obteniendo el servicio
+  const dataServices = data.services;
   const dataServicesId = Object.values(dataServices).find(
-    (data) => data.id == id
+    (data) => data.id == idService
   )
 
+  //Obteniendo el paquete
+const dataPackageId = Object.values(dataServicesId.package).find(
+    (data) => data.id == idPackage
+) ?? ''
 
-  const dataPackage = dataServicesId.package ?? [];
+ // const dataPackage = dataServicesId.package ?? [];
 
 
   return (
@@ -24,10 +28,10 @@ export const Service = () => {
       <section className=" rubik-mono-one-regular">
         <div className=" flex justify-center">
           <h1 className=" bg-blue-700 text-3xl font-bold text-center m-20 animate-wiggle max-w-fit p-5">
-            {dataServicesId.title}
+            {dataPackageId.title}
           </h1>
         </div>
-        {dataPackage.length != 0
+        {/* {dataPackage.length != 0
           ? <div className=" m-20 flex flex-wrap gap-10 justify-center">
             
             {dataPackage.map((e, index) => {
@@ -42,15 +46,15 @@ export const Service = () => {
             })}
           </div>
           : <></>
-        }
+        } */}
         <div className=" m-7">
           <p className="flex justify-center text-center">
-            {dataServicesId.description}
+            {dataPackageId.description}
           </p>
         </div>
 
         <div className=" m-1 md:m-20 p-3 md:p-10">
-          {dataServicesId.benefits.map((e, i) => (
+          {dataPackageId.benefits.map((e, i) => (
             <div className="mb-4 bg-black rounded-2xl p-5" key={i}>
               <BoldText text={e} />
             </div>
@@ -78,7 +82,7 @@ export const Service = () => {
 
           <button
             onClick={() => {
-              window.location.href = `https://api.whatsapp.com/send?phone=${data.menssageWpp.phone}&text=${data.menssageWpp.text}${dataServicesId.title}`;
+              window.location.href = `https://api.whatsapp.com/send?phone=${data.menssageWpp.phone}&text=${data.menssageWpp.text}${dataPackageId.title}`;
             }}
             type="button"
             className="  text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
@@ -90,3 +94,5 @@ export const Service = () => {
     </>
   );
 };
+
+
