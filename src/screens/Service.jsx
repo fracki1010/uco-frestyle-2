@@ -13,11 +13,11 @@ export const Service = () => {
 
   const dataServicesId = Object.values(dataServices).find(
     (data) => data.id == id
-  );
+  )
+
 
   const dataPackage = dataServicesId.package ?? [];
 
-  console.log(dataPackage);
 
   return (
     <>
@@ -27,6 +27,22 @@ export const Service = () => {
             {dataServicesId.title}
           </h1>
         </div>
+        {dataPackage.length != 0
+          ? <div className=" m-20 flex flex-wrap gap-10 justify-center">
+            
+            {dataPackage.map((e, index) => {
+              return (
+
+                <div key={index} className=" m-2">
+
+                  <CardEvent3 id={`../${e.id}`} key={index} title={e.title} image={e.image} />
+                </div>
+
+              );
+            })}
+          </div>
+          : <></>
+        }
         <div className=" m-7">
           <p className="flex justify-center text-center">
             {dataServicesId.description}
@@ -41,22 +57,10 @@ export const Service = () => {
           ))}
         </div>
         <div
-                
-                className=" m-5 p-5 flex flex-row flex-wrap justify-around "
-              >
-        { dataPackage.length != 0 
-        ?  dataPackage.map((e, index) => {
-            return (
-              
-                <div key={index} className=" m-2">
-                  
-                <CardEvent3 key={index} title={e.title} image={e.image} />
-                </div>
-              
-            );
-          })
-          : <></>
-        }
+
+          className=" m-5 p-5 flex flex-row flex-wrap justify-around "
+        >
+
         </div>
       </section>
       <section className=" m-10 flex justify-center ">

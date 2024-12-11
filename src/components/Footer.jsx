@@ -32,15 +32,15 @@ export function FooterUco() {
             <div>
               <FooterTitle title="about" />
               <FooterLinkGroup col>
-                <FooterLink href="#">Flowbite</FooterLink>
-                <FooterLink href="#">Tailwind CSS</FooterLink>
+                <FooterLink href="#">Tunuyan</FooterLink>
+                <FooterLink href="#">Mendoza</FooterLink>
               </FooterLinkGroup>
             </div>
             <div>
               <FooterTitle title="Follow us" />
               <FooterLinkGroup col>
-                <FooterLink href="#">Github</FooterLink>
-                <FooterLink href="#">Discord</FooterLink>
+                <FooterLink href="#">WhatsApp(2622515403)</FooterLink>
+                <FooterLink href="#">WhatsApp(2622515403)</FooterLink>
               </FooterLinkGroup>
             </div>
             <div>
@@ -56,11 +56,9 @@ export function FooterUco() {
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <FooterCopyright href="#" by="Flowbite™" year={2022} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <FooterIcon href="#" icon={BsFacebook} />
-            <FooterIcon href="#" icon={BsInstagram} />
-            <FooterIcon href="#" icon={BsTwitter} />
-            <FooterIcon href="#" icon={BsGithub} />
-            <FooterIcon href="#" icon={BsDribbble} />
+            <FooterIcon  href="#" icon={BsFacebook} />
+            <FooterIcon href="https://www.instagram.com/ucofreestyle" icon={BsInstagram} />
+
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ export const Videos = () => {
   const dataService = data.videos;
 
   return (
-    <section className=" mx-3 md:mx-40 mb-20 w-fit">
+    <section className=" mx-3 md:mx-40 mb-20 w-fit h">
       <div className="grid gap-4">
         <div className=" rounded-lg bg-gray-950 flex justify-center max-w-full min-w-56">
           {/* <img
@@ -22,56 +22,22 @@ export const Videos = () => {
             width={900}
           />
         </div>
-        <div className="grid sm:grid-cols-5 sm:h-52 grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-5 sm:h-52 h-full grid-cols-2 gap-4">
           {dataService.map((e, index) => {
-            return(
-            <div key={index}>
-              <ReactPlayer
-                className=" h-auto max-w-full rounded-lg"
-                url={e}
-                playing={false}
-                height={400}
-                width={900}
-                onPlay={() => window.location.href = e}
-                playIcon={false}
-              />
-            </div>);
+            return (
+              <div key={index}>
+                <ReactPlayer
+                  className=" h-auto max-w-full rounded-lg"
+                  url={e}
+                  playing={false}
+                  height={400}
+                  width={900}
+                  onPlay={() => window.location.href = e}
+                  playIcon={false}
+                />
+              </div>);
           },)}
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-              alt=""
-            />
-          </div>
+
         </div>
       </div>
     </section>

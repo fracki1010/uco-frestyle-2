@@ -6,8 +6,10 @@ import { Home } from "./screens/Home";
 import { Events } from "./screens/Events";
 import {Services} from './screens/Services'
 import { Videos } from "./screens/Videos";
-
 import { Service } from "./screens/Service";
+import { Event } from "./screens/Event";
+
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
           <Route path="/services" element={<Services/>}/>
           <Route path="/videos" element={<Videos/>}/>
           <Route  path="/services/:id" element={<Service/>}/>
+          <Route  path="/events/:id" element={<Event/>}/>
         </Routes>
       </Router>
       <footer className=" m-6 rounded-2xl">
