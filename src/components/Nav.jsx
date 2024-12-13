@@ -46,7 +46,7 @@ export function Nav({ img }) {
             href={e.href}
             key={e.key}
             // eslint-disable-next-line react-hooks/rules-of-hooks
-            active={"." + useLocation().pathname === e.href}
+            active={useLocation().pathname.includes(e.href)}
             className="rock-salt-regular text-lg text-center"
           >
             {e.name}

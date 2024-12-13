@@ -22,9 +22,6 @@ export const data = {
       description: [
         'Este sábado 14 de diciembre, **Uco Freestyle marca un antes y un después en la industria con un evento que celebra el esfuerzo, la pasión y el arte. 🌟 PROTAGONISTA DE LA NOCHE Presentamos "Punto de Partida", el esperado álbum debut de **NOTA, el primer artista que confió en nuestro sello y que representa el resultado de **3 años de trabajo incansable.',
         '🔗 LANZAMIENTO EXCLUSIVO: Además, revelaremos nuestra página web, un espacio revolucionario diseñado para conectar a artistas y eventos con oportunidades que los impulsarán al siguiente nivel.',
-        '🎧 CALENTANDO MOTORES ',
-        'Antes del gran evento, te invitamos a conocer el álbum en YouTube y Spotify. ¡Escúchalo, compártelo y sé parte del movimiento! ',
-        'No olvides suscribirte al canal, darle me gusta, **dejar tu comentario y compartir con tus amigos. ¡Tú apoyo es fundamental para el crecimiento del arte independiente! 🙌🎶 ',
         '📍 DÓNDE Y CUÁNDO ',
         '* *Fecha: * sábado 14 de diciembre. ',
         '* *Hora: * 21 hs. ',

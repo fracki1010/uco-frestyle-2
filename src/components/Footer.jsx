@@ -7,13 +7,7 @@ import {
   FooterLinkGroup,
   FooterTitle,
 } from "flowbite-react";
-import {
-  BsDribbble,
-  BsFacebook,
-  BsGithub,
-  BsInstagram,
-  BsTwitter,
-} from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 import logo from "../assets/logo.jpg";
 
 export function FooterUco() {
@@ -56,9 +50,11 @@ export function FooterUco() {
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <FooterCopyright href="#" by="Flowbite™" year={2022} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <FooterIcon  href="#" icon={BsFacebook} />
-            <FooterIcon href="https://www.instagram.com/ucofreestyle" icon={BsInstagram} />
-
+            <FooterIcon href="#" icon={BsFacebook} />
+            <FooterIcon
+              href="https://www.instagram.com/ucofreestyle"
+              icon={BsInstagram}
+            />
           </div>
         </div>
       </div>

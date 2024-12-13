@@ -2,10 +2,10 @@ import ReactPlayer from "react-player/youtube";
 import { data } from "../data/data.js";
 
 export const Videos = () => {
-  const dataService = data.videos;
+  const dataVideos = data.videos;
 
   return (
-    <section className=" mx-3 md:mx-40 mb-20 w-fit h">
+    <section className=" mx-3 md:mx-40 mb-20 w-fit ">
       <div className="grid gap-4">
         <div className=" rounded-lg bg-gray-950 flex justify-center max-w-full min-w-56">
           {/* <img
@@ -22,8 +22,8 @@ export const Videos = () => {
             width={900}
           />
         </div>
-        <div className="grid sm:grid-cols-5 sm:h-52 h-full grid-cols-2 gap-4">
-          {dataService.map((e, index) => {
+        <div className="grid sm:grid-cols-4  h-full grid-cols-2 gap-4">
+          {dataVideos.map((e, index) => {
             return (
               <div key={index}>
                 <ReactPlayer
