@@ -32,6 +32,17 @@ export const data = {
         '*🎉 ¡LA FIESTA NO TERMINA! * ',
         'Al finalizar el show, continuaremos con una fiesta exclusiva para celebrar juntos este gran momento. ¡Prepárate para bailar y disfrutar hasta el amanecer!',
         '¡No te pierdas este momento único! 🎶✨',
+      ],
+      links: [
+        {
+          id: 1,
+          platform: 'spotify',
+          link: 'https://open.spotify.com/album/0bdkh0QS0fTLx5gjMLZyVm?si=XBDlaglXQ8OwqQ4ypjzO-Q',
+        },{
+          id: 2,
+          platform: 'youtube',
+          link: 'https://linktw.in/gmjlxP',
+        }
       ]
     }
   ],
