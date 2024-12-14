@@ -7,15 +7,15 @@ export function Events() {
   const dataEvent = data.events;
 
   return (
-    
 
-      <div className="p-8 flex justify-center flex-wrap gap-10 ">
+
+    <div className="p-8 flex justify-center flex-wrap gap-10 ">
 
       {
-        dataEvent.map((e, index)=>{
-          return(
+        dataEvent.map((e, index) => {
+          return (
             <CardEvent
-            key={index}
+              key={index}
               title={e.title}
               imageUrl={e.img}
               date={e.date}
@@ -26,8 +26,8 @@ export function Events() {
         })
       }
 
-        
-      </div>
+
+    </div>
 
   );
 }

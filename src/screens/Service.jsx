@@ -15,6 +15,10 @@ export const Service = () => {
     (data) => data.id == id
   )
 
+   //Mensaje y numero de wpp
+   const messageWpp = data.menssageWpp.text;
+   const numberPhone = dataServicesId.messageWpp?.phone || data.menssageWpp.phone;
+ 
 
   const dataPackage = dataServicesId.package ?? [];
 
@@ -27,9 +31,15 @@ export const Service = () => {
             {dataServicesId.title}
           </h1>
         </div>
+
+        <div className=" m-7">
+          <p className="flex justify-center text-center">
+            {dataServicesId.description}
+          </p>
+        </div>
         {dataPackage.length != 0
           ? <div className=" m-20 flex flex-wrap gap-10 justify-center">
-            
+
             {dataPackage.map((e, index) => {
               return (
 
@@ -43,11 +53,6 @@ export const Service = () => {
           </div>
           : <></>
         }
-        <div className=" m-7">
-          <p className="flex justify-center text-center">
-            {dataServicesId.description}
-          </p>
-        </div>
 
         <div className=" m-1 md:m-20 p-3 md:p-10">
           {dataServicesId.benefits.map((e, i) => (
@@ -56,13 +61,11 @@ export const Service = () => {
             </div>
           ))}
         </div>
-        <div
 
-          className=" m-5 p-5 flex flex-row flex-wrap justify-around "
-        >
-
-        </div>
       </section>
+
+
+      {/* //whatsapp */}
       <section className=" m-10 flex justify-center ">
         <div>
           <img
@@ -71,6 +74,7 @@ export const Service = () => {
             className=" max-w-52 w-36 md:w-52 md:m-14 animate-bounce"
           />
         </div>
+
         <div className="flex flex-col self-center">
           <h3 className="text-2xl font-bold m-5">
             Adquiri esta membresia ahora!
@@ -78,7 +82,7 @@ export const Service = () => {
 
           <button
             onClick={() => {
-              window.location.href = `https://api.whatsapp.com/send?phone=${data.menssageWpp.phone}&text=${data.menssageWpp.text}${dataServicesId.title}`;
+              window.location.href = `https://api.whatsapp.com/send?phone=${numberPhone}&text=${messageWpp}${dataServicesId.title}`;
             }}
             type="button"
             className="  text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"

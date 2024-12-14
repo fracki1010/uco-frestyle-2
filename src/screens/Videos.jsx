@@ -15,7 +15,7 @@ export const Videos = () => {
           /> */}
           <ReactPlayer
             className=" h-auto max-w-full rounded-lg"
-            url={"https://www.youtube.com/watch?v=9RdrIkmfMh0"}
+            url={"https://youtu.be/ESVg3sfNzoE?si=OThKtyspyt6ggwjc"}
             playing={false}
             loop
             height={400}

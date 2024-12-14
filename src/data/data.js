@@ -22,6 +22,9 @@ export const data = {
       description: [
         'Este sábado 14 de diciembre, **Uco Freestyle marca un antes y un después en la industria con un evento que celebra el esfuerzo, la pasión y el arte. 🌟 PROTAGONISTA DE LA NOCHE Presentamos "Punto de Partida", el esperado álbum debut de **NOTA, el primer artista que confió en nuestro sello y que representa el resultado de **3 años de trabajo incansable.',
         '🔗 LANZAMIENTO EXCLUSIVO: Además, revelaremos nuestra página web, un espacio revolucionario diseñado para conectar a artistas y eventos con oportunidades que los impulsarán al siguiente nivel.',
+        '🎧 CALENTANDO MOTORES ',
+        'Antes del gran evento, te invitamos a conocer el álbum en YouTube y Spotify. ¡Escúchalo, compártelo y sé parte del movimiento! ',
+        'No olvides suscribirte al canal, darle me gusta, **dejar tu comentario y compartir con tus amigos. ¡Tú apoyo es fundamental para el crecimiento del arte independiente! 🙌🎶 ',
         '📍 DÓNDE Y CUÁNDO ',
         '* *Fecha: * sábado 14 de diciembre. ',
         '* *Hora: * 21 hs. ',
@@ -34,16 +37,17 @@ export const data = {
         '¡No te pierdas este momento único! 🎶✨',
       ],
       links: [
+
         {
-          id: 1,
           platform: 'spotify',
           link: 'https://open.spotify.com/album/0bdkh0QS0fTLx5gjMLZyVm?si=XBDlaglXQ8OwqQ4ypjzO-Q',
-        },{
-          id: 2,
+        },
+        {
           platform: 'youtube',
-          link: 'https://linktw.in/gmjlxP',
+          link: 'https://www.youtube.com/watch?si=0fjsurT9jI9Bi5vf&v=d4-S82eRJ98&feature=youtu.be',
         }
       ]
+
     }
   ],
 
@@ -61,10 +65,14 @@ export const data = {
         "1. *Descuentos especiales en entradas para eventos: Obtén un precio preferencial en todos los eventos organizados por **Uco Freestyle*.",
         "2. *Descuentos exclusivos con nuestros patrocinadores*: Benefíciate de promociones y descuentos con marcas aliadas de diferentes rubros, como comida, ropa, tatuajes, bebidas, y más.",
         "3. *Participación en sorteos exclusivos de patrocinadores*: Gana premios especiales de nuestros patrocinadores, como productos, servicios y promociones únicas, además de entradas gratis a eventos y merchandising exclusivo.",
-        "4. *Beneficios de descuento en técnica para eventos sociales: Como miembro, podrás acceder a descuentos especiales en los servicios técnicos de **Uco Freestyle* para eventos sociales, tales como casamientos, cumpleaños de 15, reuniones, y más, incluyendo sonido, luces, y otros servicios técnicos.",
+        "4. *Beneficios de descuento en técnica para eventos sociales: Como miembro, podrás acceder a descuentos especiales en los servicios de **Uco Freestyle* para eventos sociales, tales como casamientos, cumpleaños de 15, reuniones, y más, incluyendo sonido, luces, y otros servicios.",
         "5. *Acceso a información exclusiva*: Los miembros recibirán actualizaciones a través de nuestros canales de difusión sobre nuevas fechas de eventos, lanzamientos musicales, nuevos patrocinadores, promociones especiales y mucho más.",
         "6. *Participación en actividades de videoclips: Los miembros podrán ser parte de la grabación de **videoclips* de artistas, viviendo la experiencia de producción audiovisual de cerca.",
       ],
+      messageWpp: {
+        phone: '2622664083',
+        menssage: false,
+      }
     },
 
 
@@ -75,7 +83,7 @@ export const data = {
       title: "Produccion Audiovisual",
       image: "/src/assets/event-card-3.jpg",
       location: "Plaza Tunuyan, Mendoza",
-      description: '',
+      description: '*Uco Freestyle* ofrece una amplia gama de servicios en producción audiovisual, diseñados para satisfacer las necesidades de artistas, bandas, organizadores de eventos y más. Ya sea que necesites servicios de *audio, **video* o un *paquete combinado*, nuestro equipo de profesionales está listo para llevar tu proyecto al siguiente nivel, con soluciones personalizadas que se ajustan a cada necesidad y visión creativa.',
       benefits: [],
       package: [
         {
@@ -89,6 +97,10 @@ export const data = {
             " 1. *Grabación, Mezcla y Masterización*  Servicios completos de *grabación, mezcla y masterización de audio* para proyectos musicales, bandas y solistas. *Contamos con los equipos necesarios* para garantizar la mejor calidad en cada grabación, asegurándonos de capturar la esencia de tu música con precisión y profesionalismo.",
             "2. *Revisión de Letra, Preparación y Acompañamiento*  Además de los servicios técnicos, brindamos un *valor agregado* que incluye la *revisión de letras, **preparación para la grabación* y *acompañamiento durante todo el proceso creativo*. Nos aseguramos de que cada proyecto esté listo para alcanzar su máximo potencial.",
           ],
+          messageWpp: {
+            phone: '2622370907',
+            menssage: false,
+          }
         },
 
         {
@@ -105,6 +117,10 @@ export const data = {
 
             "3. *Desarrollo de Guion, Preparación y Acompañamiento Creativo*  Además de los servicios de grabación y edición, ofrecemos un *acompañamiento completo* que incluye la *creación del guion, **preparación para la grabación* y *acompañamiento durante todo el proceso creativo*. Nos aseguramos de que tu visión se materialice, apoyándote en cada paso del camino.",
           ],
+          messageWpp: {
+            phone: '2622382252',
+            menssage: false,
+          }
         }, 
         {
           id: 9,
@@ -120,6 +136,10 @@ export const data = {
             "*Desarrollo de guion y acompañamiento creativo* para asegurar la mejor ejecución de tu proyecto.",
             "Con nuestro *paquete combinado*, tendrás la posibilidad de coordinar todos los aspectos técnicos de audio y video en un solo lugar, lo que te ahorrará tiempo y esfuerzo. ¡Déjanos llevar tu proyecto de principio a fin con calidad profesional y atención personalizada!",
           ],
+          messageWpp: {
+            phone: '2622382252',
+            menssage: false,
+          }
 
         },
 
@@ -155,6 +175,10 @@ export const data = {
     
             "*6. Video para Eventos Sociales*   - *Filmación*: Grabación de tu evento con un enfoque cinematográfico, creando un video final que capture la esencia de tu celebración.   - *Edición de video*: Un video pulido con los momentos más destacados de tu evento, listo para ser compartido con amigos y familiares.",
           ],
+          messageWpp: {
+            phone: '',
+            menssage: false,
+          }
         },
     
         {
@@ -181,6 +205,10 @@ export const data = {
     
             "*8. Espacio Físico para Actividades Culturales*  - *Espacios adaptados para actividades culturales*: Contamos con un lugar adecuado para actividades como ensayos, talleres, presentaciones, festivales y otras expresiones culturales. Este espacio está disponible para artistas, grupos y organizadores que necesiten un lugar para llevar a cabo sus actividades previas o en vivo.",
           ],
+          messageWpp: {
+            phone: '2622664083',
+            menssage: false,
+          }
         },
       ]
     },
@@ -215,24 +243,28 @@ export const data = {
 
         "5. *Creación de contenido*  Desarrollamos contenido exclusivo para tus redes sociales o campañas de marketing, destacando tu marca en nuestros eventos y actividades. Además, el área de marketing visitará tus propios locales para generar contenido personalizado y promover aún más tu marca.",
       ],
+      messageWpp: {
+        phone: '',
+        menssage: false,
+      }
     },
   ],
   videos: [
-    "https://youtu.be/ESVg3sfNzoE?si=OThKtyspyt6ggwjc",
+    "https://www.youtube.com/watch?v=9RdrIkmfMh0 ",
     "https://youtu.be/iJojagWVwD4?si=u0SkRO00uFY9IVX7",
     "https://youtu.be/Sb7QTqaf33s?si=no5a_fyJdMstJ0_w",
-    "https://youtu.be/Oqmg3TnYORA?si=JQ8lGS4ThoJ26kAN",
+    "https://youtu.be/N4Vk__rDqiA?si=2THdzW7JH6HNOzPE",
     "https://youtu.be/ZU431mcrRok?si=7ScdnJhnunZbxIV3",
     "https://youtu.be/4bUD6nzQ5k4?si=GNxzi6mzgq5EPEgv",
     "https://youtu.be/Umbhr3QhLco?si=l3NUXYFwsUQyYuiO",
-    "https://youtu.be/N4Vk__rDqiA?si=2THdzW7JH6HNOzPE",
+    "https://youtu.be/Oqmg3TnYORA?si=JQ8lGS4ThoJ26kAN",
     "https://youtu.be/A_pVihMaSM8?si=N5EwSAKo0cv6tuIt",
     "https://youtu.be/BxBpslvZGlo?si=nkZpFjqjucQH1YA4",
     "https://youtu.be/1UMWCVM2uBE?si=HlBGek5kV1nxQss-",
     "https://youtu.be/QtzG0mR5mP0?si=KFLmKbexUKVJHt8W",
     "https://youtu.be/PaCBGqi3oL4?si=FJYXatmocf_BwWxh",
-    "https://youtu.be/LTNsZyYkFcs?si=mtpLbSSsILJG2qD1",
-    "https://youtu.be/pGBKxKxgiOY?si=8THW2JOrLDkrHeAz",
     "https://youtu.be/9RdrIkmfMh0?si=uvA78xaVctPSf0_C",
+    "https://youtu.be/pGBKxKxgiOY?si=8THW2JOrLDkrHeAz",
+    "https://youtu.be/LTNsZyYkFcs?si=mtpLbSSsILJG2qD1",
   ],
 };

@@ -16,11 +16,14 @@ export const Event = () => {
 
   //obtiene el link si es que existe
   const getLink = (platform) => {
+    if (!dataEventId || !Array.isArray(dataEventId.links)) {
+        return 'no-hay-link'; // Valor predeterminado si no hay enlaces
+    }
     const linkObj = dataEventId.links.filter((e) => e.platform === platform)[0];
-    const link = linkObj?.link; // Asegúrate de que linkObj existe antes de acceder a link
-    
+    const link = linkObj?.link;
+
     return typeof link === 'string' && link.trim() !== '' ? link : 'no-hay-link';
-  };
+};
 
   
   //el link pasado a limpio

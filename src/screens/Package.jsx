@@ -16,12 +16,17 @@ export const Package = () => {
   )
 
   //Obteniendo el paquete
-const dataPackageId = Object.values(dataServicesId.package).find(
+  const dataPackageId = Object.values(dataServicesId.package).find(
     (data) => data.id == idPackage
-) ?? ''
+  ) ?? ''
 
- // const dataPackage = dataServicesId.package ?? [];
+  // const dataPackage = dataServicesId.package ?? [];
 
+  //Mensaje y numero de wpp
+  const messageWpp = dataPackageId.messageWpp.message || data.menssageWpp.text;
+  const numberPhone = dataPackageId.messageWpp?.phone || data.menssageWpp.phone;
+
+  
 
   return (
     <>
@@ -53,7 +58,7 @@ const dataPackageId = Object.values(dataServicesId.package).find(
           </p>
         </div>
 
-        <div className=" m-1 md:m-20 p-3 md:p-10">
+        <div className=" m-1 md:m-6 p-3 md:p-10">
           {dataPackageId.benefits.map((e, i) => (
             <div className="mb-4 bg-black rounded-2xl p-5" key={i}>
               <BoldText text={e} />
@@ -67,8 +72,10 @@ const dataPackageId = Object.values(dataServicesId.package).find(
 
         </div>
       </section>
+
+        {/* //whatsapp */}
       <section className=" m-10 flex justify-center ">
-        <div>
+      <div>
           <img
             src={whatsapp}
             alt="whatsapp"
@@ -82,7 +89,7 @@ const dataPackageId = Object.values(dataServicesId.package).find(
 
           <button
             onClick={() => {
-              window.location.href = `https://api.whatsapp.com/send?phone=${data.menssageWpp.phone}&text=${data.menssageWpp.text}${dataPackageId.title}`;
+              window.location.href = `https://api.whatsapp.com/send?phone=${numberPhone}&text=${messageWpp}${dataPackageId.title}`;
             }}
             type="button"
             className="  text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
