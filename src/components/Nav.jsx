@@ -35,7 +35,7 @@ export function Nav({ img }) {
           UCO FREESTYLE
         </span>
       </Navbar.Brand>
-      <div className="flex md:order-2 ultra-regular">
+      <div className="flex md:order-2 ultra-regular m-1">
         <Button color="gray">Proximo Evento</Button>
         <Navbar.Toggle />
       </div>
