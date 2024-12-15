@@ -82,7 +82,10 @@ export const Service = () => {
       </section>
 
       {/* //whatsapp */}
-      <section className=" m-10 flex justify-center ">
+      {
+        dataServicesId.package.length == 0 
+
+        ? (<section className=" m-10 flex justify-center ">
         <div>
           <img
             src={whatsapp}
@@ -106,7 +109,9 @@ export const Service = () => {
             WhatsApp
           </button>
         </div>
-      </section>
+      </section>)
+    : <span className=" hidden"></span>  
+    }
     </>
   );
 };

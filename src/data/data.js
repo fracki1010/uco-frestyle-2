@@ -86,6 +86,7 @@ export const data = {
         "5. *Acceso a información exclusiva*: Los miembros recibirán actualizaciones a través de nuestros canales de difusión sobre nuevas fechas de eventos, lanzamientos musicales, nuevos patrocinadores, promociones especiales y mucho más.",
         "6. *Participación en actividades de videoclips: Los miembros podrán ser parte de la grabación de **videoclips* de artistas, viviendo la experiencia de producción audiovisual de cerca.",
       ],
+      package:[],
       messageWpp: {
         phone: '2622664083',
         menssage: false,
@@ -258,6 +259,7 @@ export const data = {
 
         "5. *Creación de contenido*  Desarrollamos contenido exclusivo para tus redes sociales o campañas de marketing, destacando tu marca en nuestros eventos y actividades. Además, el área de marketing visitará tus propios locales para generar contenido personalizado y promover aún más tu marca.",
       ],
+      package:[],
       messageWpp: {
         phone: '',
         menssage: false,
