@@ -42,7 +42,7 @@ export function FooterUco() {
         </div>
         <FooterDivider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <FooterCopyright href="#" by="Flowbite™" year={2022} />
+          <FooterCopyright href="#" by="Uco Freestyle™" year={2024} />
           <div className="mt-4 me-5 flex space-x-6 sm:mt-0 sm:justify-center">
             <BsFacebook
               onClick={() =>
