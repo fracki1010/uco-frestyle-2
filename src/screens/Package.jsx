@@ -3,6 +3,7 @@ import { data } from "../data/data.js";
 import { useParams } from "react-router-dom";
 
 import whatsapp from "../assets/whatsapp.png";
+import { TypeAnimation } from "react-type-animation";
 
 // eslint-disable-next-line react/prop-types
 export const Package = () => {
@@ -32,9 +33,26 @@ export const Package = () => {
     <>
       <section className=" rubik-mono-one-regular">
         <div className=" flex justify-center">
-          <h1 className=" bg-blue-700 text-3xl font-bold text-center m-20 animate-wiggle max-w-fit p-5">
+          {/* <h1 className=" bg-blue-700 text-3xl font-bold text-center m-20 animate-wiggle max-w-fit p-5">
             {dataPackageId.title}
-          </h1>
+          </h1> */}
+          <div className="m-20  max-w-fit p-5  bg-blue-700 ">
+            <TypeAnimation
+              sequence={[
+                
+                dataPackageId.title,
+                2000, 
+                'UCO FRESTYLE PRESENTA',
+                1000, 
+                dataPackageId.title,
+                1000
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ fontSize: "2em", display: "inline-block" }}
+              repeat={Infinity}
+            />
+          </div>
         </div>
         {/* {dataPackage.length != 0
           ? <div className=" m-20 flex flex-wrap gap-10 justify-center">
