@@ -79,7 +79,7 @@ export const Event = () => {
         </section>
 
         <section>
-          <h3 className="text-3xl font-bold mb-4 ">Otros Eventos</h3>
+          <h3 className="text-3xl font-bold mb-4 ">Fotografias del evento</h3>
           <div className="flex space-x-4">
             {dataEventId.photos.length != 0 ? (
               dataEventId.photos.map((e) => {
