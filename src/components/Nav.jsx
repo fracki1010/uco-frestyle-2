@@ -10,12 +10,12 @@ const links = [
     key: 1,
   },
   {
-    name: "Events",
+    name: "Eventos",
     href: "/events",
     key: 2,
   },
   {
-    name: "Services",
+    name: "Servicios",
     href: "/services",
     key: 3,
   },
