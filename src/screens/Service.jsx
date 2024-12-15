@@ -1,10 +1,10 @@
-
 import { BoldText } from "../components/BoldText.jsx";
 import { data } from "../data/data.js";
 import { useParams } from "react-router-dom";
 
 import whatsapp from "../assets/whatsapp.png";
 import { CardEvent3 } from "../components/CardEvent3.jsx";
+import { TypeAnimation } from "react-type-animation";
 
 // eslint-disable-next-line react/prop-types
 export const Service = () => {
@@ -13,23 +13,39 @@ export const Service = () => {
 
   const dataServicesId = Object.values(dataServices).find(
     (data) => data.id == id
-  )
+  );
 
-   //Mensaje y numero de wpp
-   const messageWpp = data.menssageWpp.text;
-   const numberPhone = dataServicesId.messageWpp?.phone || data.menssageWpp.phone;
- 
+  //Mensaje y numero de wpp
+  const messageWpp = data.menssageWpp.text;
+  const numberPhone =
+    dataServicesId.messageWpp?.phone || data.menssageWpp.phone;
 
   const dataPackage = dataServicesId.package ?? [];
-
 
   return (
     <>
       <section className=" rubik-mono-one-regular">
         <div className=" flex justify-center">
-          <h1 className=" bg-blue-700 text-3xl font-bold text-center m-20 animate-wiggle max-w-fit p-5">
+          {/* <h1 className=" bg-blue-700 text-3xl font-bold text-center m-20 animate-wiggle max-w-fit p-5">
             {dataServicesId.title}
-          </h1>
+          </h1> */}
+          <div className="m-20  max-w-fit p-5   ">
+            <TypeAnimation
+              sequence={[
+                
+                dataServicesId.title,
+                1000, 
+                'UCO FRESTYLE PRESENTA',
+                1000, 
+                dataServicesId.title,
+                1000
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ fontSize: "2em", display: "inline-block" }}
+              repeat={Infinity}
+            />
+          </div>
         </div>
 
         <div className=" m-7">
@@ -37,22 +53,24 @@ export const Service = () => {
             {dataServicesId.description}
           </p>
         </div>
-        {dataPackage.length != 0
-          ? <div className=" m-20 flex flex-wrap gap-10 justify-center">
-
+        {dataPackage.length != 0 ? (
+          <div className=" m-20 flex flex-wrap gap-10 justify-center">
             {dataPackage.map((e, index) => {
               return (
-
                 <div key={index} className=" m-2">
-
-                  <CardEvent3 id={`./package/${e.id}`} key={index} title={e.title} image={e.image} />
+                  <CardEvent3
+                    id={`./package/${e.id}`}
+                    key={index}
+                    title={e.title}
+                    image={e.image}
+                  />
                 </div>
-
               );
             })}
           </div>
-          : <></>
-        }
+        ) : (
+          <></>
+        )}
 
         <div className=" m-1 md:m-20 p-3 md:p-10">
           {dataServicesId.benefits.map((e, i) => (
@@ -61,9 +79,7 @@ export const Service = () => {
             </div>
           ))}
         </div>
-
       </section>
-
 
       {/* //whatsapp */}
       <section className=" m-10 flex justify-center ">
