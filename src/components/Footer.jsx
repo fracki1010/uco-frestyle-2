@@ -25,7 +25,9 @@ export function FooterUco() {
             <div>
               <FooterTitle title="Acerca de " />
               <FooterLinkGroup col>
-                <FooterLink href="#">PRODUCTORA DE ARTISTAS Y EVENTOS</FooterLink>
+                <FooterLink href="#">
+                  PRODUCTORA DE ARTISTAS Y EVENTOS
+                </FooterLink>
                 <FooterLink href="#">TUNUYAN, MENDOZA</FooterLink>
               </FooterLinkGroup>
             </div>
@@ -36,17 +38,29 @@ export function FooterUco() {
                 <FooterLink href="#">2622515403</FooterLink>
               </FooterLinkGroup>
             </div>
-            
           </div>
         </div>
         <FooterDivider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <FooterCopyright href="#" by="Flowbite™" year={2022} />
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+          <div className="mt-4 me-5 flex space-x-6 sm:mt-0 sm:justify-center">
+            <BsFacebook
+              onClick={() =>
+                (window.location.href =
+                  "https://www.facebook.com/profile.php?id=100084222968062 ")
+              }
+              size={40}
+              className="cursor-pointer hover:animate-bounce m-4"
+            />
 
-          <BsFacebook onClick={() => window.location.href = 'https://www.facebook.com/profile.php?id=100084222968062 '} color="#1877F2" size={40} className="cursor-pointer hover:animate-bounce m-4" />
-            
-            <BsInstagram onClick={() => window.location.href = "https://www.instagram.com/ucofreestyle"} size={40} className="cursor-pointer hover:animate-bounce m-4" />
+            <BsInstagram
+              onClick={() =>
+                (window.location.href =
+                  "https://www.instagram.com/ucofreestyle")
+              }
+              size={40}
+              className="cursor-pointer hover:animate-bounce m-4"
+            />
           </div>
         </div>
       </div>
