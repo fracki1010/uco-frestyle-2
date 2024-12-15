@@ -29,13 +29,13 @@ const links = [
 export function Nav({ img }) {
   return (
     <Navbar fluid rounded className=" bg-black">
-      <Navbar.Brand href="#">
+      <Navbar.Brand href="/home" className="m-3">
         <img src={img} className="mr-3 h-12 sm:h-20" />
         <span className="self-center whitespace-nowrap text-2xl hidden md:block font-bold dark:text-white ultra-regular">
           UCO FREESTYLE
         </span>
       </Navbar.Brand>
-      <div className="flex md:order-2 rock-salt-regular">
+      <div className="flex md:order-2 ultra-regular">
         <Button color="gray">Proximo Evento</Button>
         <Navbar.Toggle />
       </div>
@@ -47,7 +47,7 @@ export function Nav({ img }) {
             key={e.key}
             // eslint-disable-next-line react-hooks/rules-of-hooks
             active={useLocation().pathname.includes(e.href)}
-            className="rock-salt-regular text-lg text-center"
+            className="ultra-regular text-lg text-center"
           >
             {e.name}
           </Navbar.Link>

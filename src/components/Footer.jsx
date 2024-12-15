@@ -2,7 +2,6 @@ import {
   Footer,
   FooterCopyright,
   FooterDivider,
-  FooterIcon,
   FooterLink,
   FooterLinkGroup,
   FooterTitle,
@@ -24,37 +23,30 @@ export function FooterUco() {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
-              <FooterTitle title="about" />
+              <FooterTitle title="Acerca de " />
               <FooterLinkGroup col>
-                <FooterLink href="#">Tunuyan</FooterLink>
-                <FooterLink href="#">Mendoza</FooterLink>
+                <FooterLink href="#">PRODUCTORA DE ARTISTAS Y EVENTOS</FooterLink>
+                <FooterLink href="#">TUNUYAN, MENDOZA</FooterLink>
               </FooterLinkGroup>
             </div>
             <div>
-              <FooterTitle title="Follow us" />
+              <FooterTitle title="Contactos" />
               <FooterLinkGroup col>
-                <FooterLink href="#">WhatsApp(2622515403)</FooterLink>
-                <FooterLink href="#">WhatsApp(2622515403)</FooterLink>
+                <FooterLink href="#">2622515403</FooterLink>
+                <FooterLink href="#">2622515403</FooterLink>
               </FooterLinkGroup>
             </div>
-            <div>
-              <FooterTitle title="Legal" />
-              <FooterLinkGroup col>
-                <FooterLink href="#">Privacy Policy</FooterLink>
-                <FooterLink href="#">Terms &amp; Conditions</FooterLink>
-              </FooterLinkGroup>
-            </div>
+            
           </div>
         </div>
         <FooterDivider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <FooterCopyright href="#" by="Flowbite™" year={2022} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <FooterIcon href="#" icon={BsFacebook} />
-            <FooterIcon
-              href="https://www.instagram.com/ucofreestyle"
-              icon={BsInstagram}
-            />
+
+          <BsFacebook onClick={() => window.location.href = 'https://www.facebook.com/profile.php?id=100084222968062 '} color="#1877F2" size={40} className="cursor-pointer hover:animate-bounce m-4" />
+            
+            <BsInstagram onClick={() => window.location.href = "https://www.instagram.com/ucofreestyle"} size={40} className="cursor-pointer hover:animate-bounce m-4" />
           </div>
         </div>
       </div>

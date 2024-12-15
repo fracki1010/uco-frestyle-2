@@ -1,3 +1,18 @@
+
+import image1 from '../assets/event-card.jpg'
+import image2 from '../assets/event-card-2.jpg'
+import image3 from '../assets/event-card-3.jpg'
+import image4 from '../assets/event-card-4.jpg'
+import image5 from '../assets/event-card-5.jpg'
+import image6 from '../assets/event-card-6.jpg'
+import image7 from '../assets/evento-2.jpg'
+import image8 from '../assets/evento-3.jpg'
+import image9 from '../assets/evento-4.jpg'
+
+
+import event1 from '../assets/images/evento1.jpg'
+
+
 export const data = {
   home: {
     quienesSomos1:
@@ -18,7 +33,7 @@ export const data = {
       id: 1,
       title: 'Punto de partida',
       date: '14-12-2024',
-      img: 'src/assets/images/evento1.jpg',
+      img: event1,
       description: [
         'Este sábado 14 de diciembre, **Uco Freestyle marca un antes y un después en la industria con un evento que celebra el esfuerzo, la pasión y el arte. 🌟 PROTAGONISTA DE LA NOCHE Presentamos "Punto de Partida", el esperado álbum debut de **NOTA, el primer artista que confió en nuestro sello y que representa el resultado de **3 años de trabajo incansable.',
         '🔗 LANZAMIENTO EXCLUSIVO: Además, revelaremos nuestra página web, un espacio revolucionario diseñado para conectar a artistas y eventos con oportunidades que los impulsarán al siguiente nivel.',
@@ -46,6 +61,9 @@ export const data = {
           platform: 'youtube',
           link: 'https://www.youtube.com/watch?si=0fjsurT9jI9Bi5vf&v=d4-S82eRJ98&feature=youtu.be',
         }
+      ],
+      photos: [
+        
       ]
 
     }
@@ -56,8 +74,7 @@ export const data = {
       id: 1,
 
       title: "PUBLICO",
-      image:
-        "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg",
+      image: image1,
       location: "Plaza Tunuyan, Mendoza",
       description:
         "*Únete a Uco Freestyle y disfruta de beneficios exclusivos* con nuestra membresía para público, pensada para aquellos que aman los eventos en vivo, la música y las experiencias únicas. Al ser parte de *Uco Freestyle*, disfrutarás de descuentos especiales en entradas para eventos, promociones con nuestros patrocinadores y muchos más beneficios. ¡Conviértete en miembro y aprovecha todo lo que tenemos para ofrecerte!",
@@ -81,7 +98,7 @@ export const data = {
 
       id: 2,
       title: "Produccion Audiovisual",
-      image: "/src/assets/event-card-3.jpg",
+      image: image2,
       location: "Plaza Tunuyan, Mendoza",
       description: '*Uco Freestyle* ofrece una amplia gama de servicios en producción audiovisual, diseñados para satisfacer las necesidades de artistas, bandas, organizadores de eventos y más. Ya sea que necesites servicios de *audio, **video* o un *paquete combinado*, nuestro equipo de profesionales está listo para llevar tu proyecto al siguiente nivel, con soluciones personalizadas que se ajustan a cada necesidad y visión creativa.',
       benefits: [],
@@ -90,7 +107,7 @@ export const data = {
           id: 7,
           title: "PRODUCCION DE AUDIO",
           image:
-            "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg",
+            image8,
           location: "Plaza Tunuyan, Mendoza",
           description: "",
           benefits: [
@@ -106,8 +123,7 @@ export const data = {
         {
           id: 8,
           title: "PRODUCCION DE VIDEO",
-          image:
-            "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-5.jpg",
+          image: image3,
           location: "Plaza Tunuyan, Mendoza",
           description: "",
           benefits: [
@@ -125,7 +141,7 @@ export const data = {
         {
           id: 9,
           title: "PAQUETE COMBINADO",
-          image: "/src/assets/event-card-3.jpg",
+          image: image4,
           location: "Plaza Tunuyan, Mendoza",
           description:
             "Ofrecemos un *paquete combinado* que incluye tanto nuestros servicios de *producción de audio* como de *producción de video*, brindando una solución integral para proyectos musicales, videoclips y eventos. Este paquete es ideal para artistas y bandas que buscan una producción completa, desde la grabación de la música hasta la creación del videoclip, pasando por la edición y el marketing visual. ",
@@ -149,7 +165,7 @@ export const data = {
     {
       id:9,
       title: 'Eventos Sociales y Organizadores de encuentros culturales',
-      img: "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-3.jpg",
+      img: image5,
       location: '',
       description: '',
       benefits: [],
@@ -157,8 +173,7 @@ export const data = {
         {
           id: 3,
           title: "SERVICIO PARA EVENTOS SOCIALES",
-          image:
-            "https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/5525c237e1b2fed57c3ff08ba9adc1de40d59324/src/assets/event-card-3.jpg",
+          image: image9,
           location: "Plaza Tunuyan, Mendoza",
           description:
             "En *Uco Freestyle*, ofrecemos soluciones técnicas integrales para asegurar que tu evento social sea único e inolvidable. Ya sea un casamiento, cumpleaños de 15, reuniones o cualquier otro evento privado, nuestro equipo garantiza que cada detalle sea perfecto y que tu experiencia sea de la más alta calidad.",
@@ -184,7 +199,7 @@ export const data = {
         {
           id: 4,
           title: "Servicios para Gestores y Organizadores de Eventos Culturales",
-          image: "/src/assets/event-card-3.jpg",
+          image: image6,
           location: "Plaza Tunuyan, Mendoza",
           description:
             "Para los organizadores de eventos culturales, *Uco Freestyle* ofrece un conjunto completo de servicios técnicos, creativos y de difusión que aseguran el éxito de tu evento, ya sea un festival, un concierto o cualquier otro tipo de actividad cultural.",
@@ -228,7 +243,7 @@ export const data = {
     {
       id: 6,
       title: "SPONSOR",
-      image:"https://raw.githubusercontent.com/fracki1010/uco-frestyle-2/refs/heads/main/src/assets/event-card-4.jpg",
+      image:image7,
       location: "Plaza Tunuyan, Mendoza",
       description:
         "En *Uco Freestyle*, te ofrecemos una oportunidad única para que tu marca sea parte de nuestros eventos en vivo y alcance una audiencia comprometida. Al convertirte en patrocinador de nuestra productora, podrás disfrutar de una serie de beneficios exclusivos para impulsar tu visibilidad y promover tus productos o servicios de manera efectiva.",
@@ -268,3 +283,48 @@ export const data = {
     "https://youtu.be/LTNsZyYkFcs?si=mtpLbSSsILJG2qD1",
   ],
 };
+
+
+
+
+
+export const imagesData = [
+  {
+    id: 1,
+    name: 'event-card',
+    url: image1,
+  },
+  {
+    id: 2,
+    name: 'event-card-2',
+    url: image2,
+  },
+  {
+    id: 3,
+    name: 'event-card-3',
+    url: image3,
+  },
+  {
+    id: 4,
+    name: 'event-card-4',
+    url: image4,
+  },
+  {
+    id: 5,
+    name: 'event-card-5',
+    url: image5,
+  },
+  {
+    id: 6,
+    name: 'event-card-6',
+    url: image6,
+  },
+  {
+    id: 7,
+    name: 'event-1',
+    url: event1,
+  },
+  
+    
+    
+];

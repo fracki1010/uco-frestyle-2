@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable no-undef */
 /* eslint-disable react/no-unescaped-entities */
 import { useParams } from "react-router-dom";
@@ -16,29 +17,26 @@ export const Event = () => {
 
   //obtiene el link si es que existe
   const getLink = (platform) => {
-    if (!dataEventId || !Array.isArray(dataEventId.links)) {
-        return 'no-hay-link'; // Valor predeterminado si no hay enlaces
-    }
     const linkObj = dataEventId.links.filter((e) => e.platform === platform)[0];
-    const link = linkObj?.link;
+    const link = linkObj?.link; // Asegúrate de que linkObj existe antes de acceder a link
 
-    return typeof link === 'string' && link.trim() !== '' ? link : 'no-hay-link';
-};
+    return typeof link === "string" && link.trim() !== ""
+      ? link
+      : "no-hay-link";
+  };
 
-  
   //el link pasado a limpio
   const spotifyLink = getLink("spotify");
   const youtubeLink = getLink("youtube");
 
   console.log(spotifyLink);
-  
 
   const spotifyIcon = (
     <BsSpotify
       className=" m-3 animate-wiggle cursor-pointer hover:animate-bounce"
       size={60}
       color="1db954"
-      onClick={() => (window.location.href =  spotifyLink )}
+      onClick={() => (window.location.href = spotifyLink)}
     />
   );
 
@@ -47,15 +45,12 @@ export const Event = () => {
       className=" m-3 animate-wiggle cursor-pointer hover:animate-bounce"
       size={60}
       color="#FF0000"
-      onClick={() => (window.location.href =  youtubeLink )}
+      onClick={() => (window.location.href = youtubeLink)}
     />
   );
 
-
-
   return (
     <>
-      
       <section className="m-10">
         <section className="bg-gray-800 rounded-lg shadow-md p-4 mb-6">
           <div className="flex flex-col md:flex-row">
@@ -86,25 +81,23 @@ export const Event = () => {
         <section>
           <h3 className="text-3xl font-bold mb-4 ">Otros Eventos</h3>
           <div className="flex space-x-4">
-            <div className="flex-shrink-0 w-36">
-              <img
-                src="https://via.placeholder.com/180x270"
-                alt="Evento photo"
-                className="rounded-lg mb-2"
-              />
-              <h4 className="text-lg font-semibold">Event Name</h4>
-              <p className="text-gray-400 text-sm">Date</p>
-            </div>
+            {dataEventId.photos.length != 0 ? (
+              dataEventId.photos.map((e) => {
+                return (
+                  <div className="flex-shrink-0 w-36">
+                    <img
+                      src={e.url}
+                      alt="Evento photo"
+                      className="rounded-lg mb-2"
+                    />
+                  </div>
+                );
+              })
+            ) : (
+              <h2 className=" ultra-regular font-bold text-xl m-8"> No hay fotos disponibles </h2>
+            )}
 
-            <div className="flex-shrink-0 w-36">
-              <img
-                src="https://via.placeholder.com/180x270"
-                alt="Evento photo"
-                className="rounded-lg mb-2"
-              />
-              <h4 className="text-lg font-semibold">Event Name</h4>
-              <p className="text-gray-400 text-sm">Date</p>
-            </div>
+            
           </div>
         </section>
       </section>
